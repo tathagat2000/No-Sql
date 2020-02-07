@@ -26,12 +26,12 @@ public class imgCounter
 				value.set(".gif");
 				context.write(value, new IntWritable(1));
 			}
-			else if(str.contains(".png"))
+			else if(str.contains(".jpg"))
 			{
-				value.set(".png");
+				value.set(".jpg");
 				context.write(value, new IntWritable(1));
 			}
-			else
+			else if(str.contains(".png"))
 			{
 				value.set("other");
 				context.write(value, new IntWritable(1));
